@@ -5,10 +5,13 @@ plugins {
 }
 android {
     namespace 'com.zx.richhtml'
-    compileSdk 33
+
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        minSdk 21
+        minSdkVersion 21
+        targetSdkVersion 29
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -67,9 +70,9 @@ dependencies {
     implementation project(':latexlibrary')
     //默认情况下，Gradle将每24小时刷新一次快照依赖项。
     //如果版本以-SNAPSHOT后缀结尾，Gradle将自动将依赖项识别为快照。例如:
-//    compile group: "aGroup", name: "anArtifact", version: "1.0-SNAPSHOT"
+//    implementation group: "aGroup", name: "anArtifact", version: "1.0-SNAPSHOT"
     //但是，如果依赖项的版本字符串不以-SNAPSHOT结尾，则需要告知Gradle它是带有changing参数的快照。例如
-    implementation group: "aGroup", name: "anArtifact", version: "1.0", changing: true
+//    implementation group: "aGroup", name: "anArtifact", version: "1.0", changing: true
 }
 //打包源码的task
 task generateSourcesJar(type: Jar){
