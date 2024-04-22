@@ -2,7 +2,7 @@ package com.example.tablerichtext
 
 import android.app.Application
 import android.content.Context
-import com.zx.richhtml.RichHtml
+//import com.zx.richhtml.RichHtml
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStream
@@ -42,6 +42,6 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        RichHtml.init(applicationContext)
+//        RichHtml.init(applicationContext)
     }
 }
