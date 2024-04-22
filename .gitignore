@@ -75,7 +75,7 @@ push/build
 
 
 *.iml
-.gradle
+
 /.idea/
 /local.properties
 /.idea/workspace.xml
